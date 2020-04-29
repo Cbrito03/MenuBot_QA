@@ -29,11 +29,12 @@ function validar_dia(day)
 validarHorario = function(OPEN_HOUR, OPEN_MINUTE, CLOSE_HOUR, CLOSE_MINUTE)
 {
 	/*const now = new Date();
-
 	var hora = now.getHours();
 	var minuto =now.getMinutes();
-
 	var dia = now.getDay();*/
+	
+	var d = new Date();
+	var offset = -6;
 	var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
 	var now = new Date(utc + (3600000*offset));
 	  
