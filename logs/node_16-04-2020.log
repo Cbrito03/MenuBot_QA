@@ -1,0 +1,367 @@
+*********************************16-04-2020 14:11:11*********************************
+[FECHA] : 16-04-2020 - [HORA] : 14:11:11 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'https://nodejsmenubotca.mybluemix.net/Router.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 14:41:18*********************************
+[FECHA] : 16-04-2020 - [HORA] : 14:41:18 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'https://nodejsmenubotca.mybluemix.net/Router.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 15:16:23*********************************
+[FECHA] : 16-04-2020 - [HORA] : 15:16:23 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'http://192.168.200.100:3700/Router.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 15:16:35*********************************
+[FECHA] : 16-04-2020 - [HORA] : 15:16:35 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'transfer', queue: 'WhatsappSM' },
+  messages: 
+   [ { type: undefined,
+       text: 'En un momento mas uno de nuestros asesores lo atenderá',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 15:17:34*********************************
+[FECHA] : 16-04-2020 - [HORA] : 15:17:34 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: '👋 Te damos la bienvenida a la GigaRed Claro, nuestro compromiso es mantenerte conectado.😊 $cr $cr Ingresa el número de la opción con la que necesitas apoyo: $cr $cr 1. Adquirir un plan nuevo, información de promociones o renovar mi servicio $cr 2. Gestiones y soporte de mis servicios actuales $cr ',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 15:18:03*********************************
+[FECHA] : 16-04-2020 - [HORA] : 15:18:03 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: undefined },
+  messages: 
+   [ { type: undefined,
+       text: '¡Hola! $cr Soy tu asistente virtual 🤖 de Claro $cr Te puedo ayudar con las siguientes opciones: $cr Envía *cotizar* para conocer nuestros planes móviles y residenciales. 😎 $cr Envía *precio* para ver el catálogo de celulares prepago por marca. 📱 $cr Envía *asesor* si aún deseas ser atendido por uno de nuestros agentes de servicio al cliente o ventas. 👩💻👨💻 $cr Envía *recarga* para hacer una recarga. $cr Envía *paquete* para comprar un paquete. $cr Envía *pagar* para ver el saldo, fecha de vencimiento y pagar tu factura móvil y residencial. 💳 $cr Envía *factura* para conocer tus opciones en consulta de facturas. (Monto y fecha de vencimiento) 📥 $cr Envía *configuración* para conocer los pasos a seguir si tienes inconvenientes con tu navegación 📱. $cr Envía *soporte* si presentas inconvenientes con tu router de tu internet residencial. ☎📺🖥 $cr Envía *club* para conocer los establecimientos con promociones especiales solo por ser cliente Claro. 😎 💰 $cr ',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 15:18:11*********************************
+[FECHA] : 16-04-2020 - [HORA] : 15:18:11 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: undefined },
+  messages: 
+   [ { type: undefined,
+       text: '¡Hola! $cr Soy tu asistente virtual 🤖 de Claro $cr Te puedo ayudar con las siguientes opciones: $cr Envía *cotizar* para conocer nuestros planes móviles y residenciales. 😎 $cr Envía *precio* para ver el catálogo de celulares prepago por marca. 📱 $cr Envía *asesor* si aún deseas ser atendido por uno de nuestros agentes de servicio al cliente o ventas. 👩💻👨💻 $cr Envía *recarga* para hacer una recarga. $cr Envía *paquete* para comprar un paquete. $cr Envía *pagar* para ver el saldo, fecha de vencimiento y pagar tu factura móvil y residencial. 💳 $cr Envía *factura* para conocer tus opciones en consulta de facturas. (Monto y fecha de vencimiento) 📥 $cr Envía *configuración* para conocer los pasos a seguir si tienes inconvenientes con tu navegación 📱. $cr Envía *soporte* si presentas inconvenientes con tu router de tu internet residencial. ☎📺🖥 $cr Envía *club* para conocer los establecimientos con promociones especiales solo por ser cliente Claro. 😎 💰 $cr ',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 15:21:51*********************************
+[FECHA] : 16-04-2020 - [HORA] : 15:21:51 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: '👋 Te damos la bienvenida a la GigaRed Claro, nuestro compromiso es mantenerte conectado.😊 $cr $cr Ingresa el número de la opción con la que necesitas apoyo: $cr $cr 1. Adquirir un plan nuevo, información de promociones o renovar mi servicio $cr 2. Gestiones y soporte de mis servicios actuales $cr ',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 15:22:51*********************************
+[FECHA] : 16-04-2020 - [HORA] : 15:22:51 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: '👋 Te damos la bienvenida a la GigaRed Claro, nuestro compromiso es mantenerte conectado.😊 $cr $cr Ingresa el número de la opción con la que necesitas apoyo: $cr $cr 1. Adquirir un plan nuevo, información de promociones o renovar mi servicio $cr 2. Gestiones y soporte de mis servicios actuales $cr ',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 15:23:03*********************************
+[FECHA] : 16-04-2020 - [HORA] : 15:23:03 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: undefined },
+  messages: 
+   [ { type: undefined,
+       text: '¡Hola! $cr Soy tu asistente virtual 🤖 de Claro $cr Te puedo ayudar con las siguientes opciones: $cr Envía *cotizar* para conocer nuestros planes móviles y residenciales. 😎 $cr Envía *precio* para ver el catálogo de celulares prepago por marca. 📱 $cr Envía *asesor* si aún deseas ser atendido por uno de nuestros agentes de servicio al cliente o ventas. 👩💻👨💻 $cr Envía *recarga* para hacer una recarga. $cr Envía *paquete* para comprar un paquete. $cr Envía *pagar* para ver el saldo, fecha de vencimiento y pagar tu factura móvil y residencial. 💳 $cr Envía *factura* para conocer tus opciones en consulta de facturas. (Monto y fecha de vencimiento) 📥 $cr Envía *configuración* para conocer los pasos a seguir si tienes inconvenientes con tu navegación 📱. $cr Envía *soporte* si presentas inconvenientes con tu router de tu internet residencial. ☎📺🖥 $cr Envía *club* para conocer los establecimientos con promociones especiales solo por ser cliente Claro. 😎 💰 $cr ',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 15:24:09*********************************
+*********************************16-04-2020 15:42:55*********************************
+*********************************16-04-2020 16:09:17*********************************
+*********************************16-04-2020 16:10:27*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:10:27 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: 'El horario de atención de clientes es de Lunes a viernes de 15:0 a 15:23',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:11:06*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:11:06 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: '👋 Te damos la bienvenida a la GigaRed Claro, nuestro compromiso es mantenerte conectado.😊 $cr $cr Ingresa el número de la opción con la que necesitas apoyo: $cr $cr 1. Adquirir un plan nuevo, información de promociones o renovar mi servicio $cr 2. Gestiones y soporte de mis servicios actuales $cr ',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:17:29*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:17:29 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: 'El horario de atención de clientes es de Lunes a viernes de 15:0 a 16:13',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:17:36*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:17:36 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'http://192.168.200.100:3700/Router.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:17:49*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:17:49 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: 'El horario de atención de clientes es de Lunes a viernes de 15:0 a 16:13',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:18:21*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:18:21 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: '👋 Te damos la bienvenida a la GigaRed Claro, nuestro compromiso es mantenerte conectado.😊 $cr $cr Ingresa el número de la opción con la que necesitas apoyo: $cr $cr 1. Adquirir un plan nuevo, información de promociones o renovar mi servicio $cr 2. Gestiones y soporte de mis servicios actuales $cr ',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:20:15*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:20:15 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: 'El horario de atención de clientes es de Lunes a viernes de 15:0 a 16:20',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:20:28*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:20:28 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'http://192.168.200.100:3700/Router.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:20:40*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:20:40 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: 'El horario de atención de clientes es de Lunes a viernes de 15:0 a 16:20',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:20:49*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:20:49 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: 'El horario de atención de clientes es de Lunes a viernes de 15:0 a 16:20',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:20:52*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:20:52 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'text',
+       text: 'El horario de atención de clientes es de Lunes a viernes de 15:0 a 16:20',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:30:52*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:30:52 - [conversationID] : 176423 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'http://192.168.200.100:3700/APN%20GT.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 176423 	 [authToken] :  dsrdsfrxw934df	 [channel] : whatsapp
+ 
+*********************************16-04-2020 16:33:01*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:33:01 - [conversationID] : 176423 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'http://192.168.200.100:3700/APN%20GT.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 176423 	 [authToken] :  dsrdsfrxw934df	 [channel] : whatsapp
+ 
+*********************************16-04-2020 16:33:04*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:33:04 - [conversationID] : 176423 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'http://192.168.200.100:3700/APN%20GT.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 176423 	 [authToken] :  dsrdsfrxw934df	 [channel] : whatsapp
+ 
+*********************************16-04-2020 16:33:22*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:33:22 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'http://192.168.200.100:3700/APN%20GT.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:34:03*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:34:03 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: undefined },
+  messages: 
+   [ { type: undefined,
+       text: '¡Hola! $cr Soy tu asistente virtual 🤖 de Claro $cr Te puedo ayudar con las siguientes opciones: $cr Envía *cotizar* para conocer nuestros planes móviles y residenciales. 😎 $cr Envía *precio* para ver el catálogo de celulares prepago por marca. 📱 $cr Envía *recarga* para hacer una recarga. $cr Envía *paquete* para comprar un paquete. $cr Envía *pagar* para ver el saldo, fecha de vencimiento y pagar tu factura móvil y residencial. 💳 $cr Envía *factura* para conocer tus opciones en consulta de facturas. (Monto y fecha de vencimiento) 📥 $cr Envía *configuración* para conocer los pasos a seguir si tienes inconvenientes con tu navegación 📱. $cr Envía *soporte* si presentas inconvenientes con tu router de tu internet residencial. ☎📺🖥 $cr Envía *club* para conocer los establecimientos con promociones especiales solo por ser cliente Claro. 😎 💰 $cr Envía *asesor* si aún deseas ser atendido por uno de nuestros agentes de servicio al cliente o ventas. 👩💻👨💻 $cr ',
+       mediaURL: undefined } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:35:20*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:35:20 - [conversationID] : 1234eyx328 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'http://187.210.40.89:3700/APN%20GT.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 1234eyx328 	 [authToken] :  dsrdsfrxw934df	 [channel] : messenger
+ 
+*********************************16-04-2020 16:37:00*********************************
+[FECHA] : 16-04-2020 - [HORA] : 16:37:00 - [conversationID] : 176423 - [Accion] : /message 
+ [STATUS] : 200 - [Resultado] : 
+{ context: { agent: false, callback: false, video: false },
+  action: { type: 'continue', queue: '' },
+  messages: 
+   [ { type: 'image',
+       text: 'Sigue los pasos detallados en la imagen, si el inconveniente persiste, favor escribe *asesor* para recibir asistencia técnica con uno de nuestros agentes.',
+       mediaURL: 'http://187.210.40.89:3700/Router.jpeg' } ],
+  additionalInfo: { key: 'RUT', RUT: '1-9' } }
+****************************[DATOS DE ENTRADA]****************************
+[apiVersion] : 1.0 	 [conversationID] : 176423 	 [authToken] :  dsrdsfrxw934df	 [channel] : whatsapp
+ 
