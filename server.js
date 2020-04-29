@@ -338,16 +338,32 @@ app.get('/', (req, res) => {
   var hora = now.getHours();
   hora  = hora - 6;
 
+  // create Date object for current location
+  var d = new Date();
+
+  // convert to msec
+  // add local time zone offset
+  // get UTC time in msec
+  var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+  // create new Date object for different city
+  // using supplied offset
+  var nd = new Date(utc + (3600000*offset));
+
+  // return time as a string
+  return "The local time in " + city + " is " + nd.toLocaleString();
+
   var respuesta = "Bienvenido al menú Bot, las opciones disponibles son: <br> /message<br> /terminate <br>";
   respuesta += "Hora del servidor: " + now + " <br> ";
   respuesta += "Versión: 2.0.0 <br>";
-  respuesta += "Horarios: " + horarios +" <br>";
+  respuesta += "Horarios: " + horarios + " <br>";
   respuesta += "Hora Establecida: " + config.OPEN_HOUR+" <br>";
   respuesta += "Hora del sistema: " + hora;
-  respuesta += "";
-  respuesta += "";
+  respuesta += "Hora ejemplo 2: " + nd.toLocaleString() +" <br>";
 
   res.status(200).send(respuesta);
+
+});
 
 http.createServer(app).listen(port, () => {
   console.log('Server started at http://localhost:' + port);
