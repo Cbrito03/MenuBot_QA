@@ -350,7 +350,7 @@ app.get('/', (req, res) => {
   respuesta += "Horarios: " + horarios + " <br>";
   respuesta += "Hora Establecida: " + config.OPEN_HOUR+" <br>";
   respuesta += "Hora del sistema: " + hora +" : "+ horas +" <br>";
-  respuesta += "Hora ejemplo 2: " + nd.toLocaleString() +" <br>";
+  respuesta += "Hora ejemplo 2: " + nd.getHours() +" <br>";
 
   res.status(200).send(respuesta);
 

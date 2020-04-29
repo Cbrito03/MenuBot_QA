@@ -28,18 +28,27 @@ function validar_dia(day)
 
 validarHorario = function(OPEN_HOUR, OPEN_MINUTE, CLOSE_HOUR, CLOSE_MINUTE)
 {
-	const now = new Date();
+	/*const now = new Date();
 
+	var hora = now.getHours();
+	var minuto =now.getMinutes();
+
+	var dia = now.getDay();*/
+	var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+	var now = new Date(utc + (3600000*offset));
+	  
 	var hora = now.getHours();
 	var minuto =now.getMinutes();
 
 	var dia = now.getDay();
 
+	console.log(now, hora, minuto, dia);
+
 	if(isValidHour(OPEN_HOUR, OPEN_MINUTE) && isValidHour(CLOSE_HOUR, CLOSE_MINUTE))
 	{
 		if(validar_dia(dia))
 		{          
-			if(validar_rango_hora(hora - 6))
+			if(validar_rango_hora(hora))
 			{
 				if(hora == CLOSE_HOUR)
 				{
