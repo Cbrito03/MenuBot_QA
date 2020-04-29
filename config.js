@@ -1,8 +1,8 @@
-var OPEN_HOUR = 15;
+var OPEN_HOUR = 7;
 var OPEN_MINUTE = 0;
 
-var CLOSE_HOUR = 17;
-var CLOSE_MINUTE = 30;
+var CLOSE_HOUR = 22;
+var CLOSE_MINUTE = 0;
 
 var dias = {
     "0" : ["domingo",true],

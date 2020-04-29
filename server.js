@@ -335,20 +335,19 @@ app.get('/', (req, res) => {
   }
 
   const now = new Date();
+  var hora = now.getHours();
+  hora  = hora - 6;
 
-  var date = new Date();
-    
-    var newDate = new Date(8 * 60 * 60000 + date.valueOf() -
-                           (date.getTimezoneOffset() * 60000));
+  var respuesta = "Bienvenido al menú Bot, las opciones disponibles son: <br> /message<br> /terminate <br>";
+  respuesta += "Hora del servidor: " + now + " <br> ";
+  respuesta += "Versión: 2.0.0 <br>";
+  respuesta += "Horarios: " + horarios +" <br>";
+  respuesta += "Hora Establecida: " + config.OPEN_HOUR+" <br>";
+  respuesta += "Hora del sistema: " + hora;
+  respuesta += "";
+  respuesta += "";
 
-    var ampm = newDate.getHours() < 12 ? ' AM' : ' PM';
-
-    var strDate = newDate + '';
-
-    
-
-  res.status(200).send("Bienvenido al menú Bot, las opciones disponibles son: <br> /message<br> /terminate <br> "+now+" <br> Versión: 2.0.0 <br> Horario: " + horarios +" <br>"+ (strDate).substring(0, strDate.indexOf(' GMT')) + ampm);
-});
+  res.status(200).send(respuesta);
 
 http.createServer(app).listen(port, () => {
   console.log('Server started at http://localhost:' + port);

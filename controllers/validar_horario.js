@@ -39,7 +39,7 @@ validarHorario = function(OPEN_HOUR, OPEN_MINUTE, CLOSE_HOUR, CLOSE_MINUTE)
 	{
 		if(validar_dia(dia))
 		{          
-			if(validar_rango_hora(hora))
+			if(validar_rango_hora(hora - 6))
 			{
 				if(hora == CLOSE_HOUR)
 				{
