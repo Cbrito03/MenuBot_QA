@@ -28,7 +28,7 @@ var horario_WA = {
 var horario_FB = {
   "OPEN_HOUR" : 7,
   "OPEN_MINUTE" : 0,
-  "CLOSE_HOUR" : 13,
+  "CLOSE_HOUR" : 22,
   "CLOSE_MINUTE" : 0,
   dias : {
     "0" : ["domingo",true],
