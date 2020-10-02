@@ -3,14 +3,31 @@ var colas = {
     "timeout" : 900000,
     "acd" : "HN_Wa_Movil",
     "fh" : "HN_Wa_Movil_FueraH"
-  }
+  },
+  "cotizar" : {
+    "timeout" : 900000,
+    "acd" : "HN_WA_Ventas",
+    "fh" : "HN_WA_Ventas_FueraH"
+  },
+  "asistencia_1" : {
+    "timeout" : 900000,
+    "acd" : "HN_WA_Ventas",
+    "fh" : "HN_WA_Ventas_FueraH"      
+  },
+  "asistencia_2" : {
+    "timeout" : 900000,
+    "acd" : "HN_Wa_Movil",
+    "fh" : "HN_Wa_Movil_FueraH"
+  },
 };
 
 var mensaje_df = "¡Hola! $cr Soy tu asistente virtual 🤖 de Claro $cr Te puedo ayudar con las siguientes opciones: $cr $cr ";
+    mensaje_df +="➡️ Envía *cotizar* para conocer nuestros planes móviles y residenciales si deseas renovar o contratar nuevos servicios. 😎 $cr $cr ";
     mensaje_df +="➡️ Envía *recarga* para hacer una recarga. $cr $cr ";
     mensaje_df +="➡️ Envía *paquete* para comprar un paquete. $cr $cr ";
     mensaje_df +="➡️ Envía *pagar* para ver el saldo, fecha de vencimiento y pagar tu factura móvil y residencial. 💳 $cr $cr ";
     mensaje_df +="➡️ Envía *club* para conocer los establecimientos con promociones especiales solo por ser cliente Claro. 😎 💰 $cr $cr ";
+    mensaje_df +="➡️ Envía *asistencia* para conocer los establecimientos con promociones especiales solo por ser cliente Claro. 😎 💰 $cr $cr ";
     mensaje_df +="➡️ Envía *asesor* si aún deseas ser atendido por uno de nuestros agentes de servicio al cliente. 👩💻👨💻 $cr $cr ";
 
 var mjs_horario = "Estimado cliente, te informamos que nuestro horario de atención es de Lunes a Domingo de 7:00 - 22:00, Agradeceremos tu preferencia";
@@ -30,6 +47,10 @@ var msj_club = "Si eres Claro 😉 eres parte del club con beneficios y descuent
     msj_club += "¡Descarga la App! 👇 $cr ";
     msj_club += "Android: http://bit.ly/ClaroClub-Android $cr ";
     msj_club += "iOS: http://bit.ly/ClaroClubiOS ";
+
+var msj_asistencia = "👋Gracias por comunicarte a Claro, por favor ingresa el número de la opción con la que necesitas apoyo 😊: $cr $cr ";
+    msj_asistencia += "1. Adquirir servicio nuevo, información de promoción o renovar mi servicio. $cr $cr ";
+    msj_asistencia += "2. Servicio al cliente. $cr";
     
 var msj_default = 
 {
@@ -47,6 +68,20 @@ var msj_default =
 };
 
 var palabras = {
+  "cotizar": {
+    "action" : {
+      "type" : "transfer",
+      "queue" : colas["cotizar"].acd,
+      "timeoutInactivity" : colas["cotizar"].timeout
+    },
+    "messages" : [
+      {
+        "type" : "text",
+        "text" :  "*¡Hola!🤗 Bienvenido a nuestro servicio de ventas Claro.*  En un momento uno de nuestros representantes te atenderá ",
+        "mediaURL" : ""
+      }
+    ]
+  },
   "recarga": {
     "action" : {
       "type" : "continue",
@@ -99,10 +134,25 @@ var palabras = {
       }
     ]
   },
+  "asistencia": {
+    "action" : {
+      "type" : "continue",
+      "queue" : ""
+    },
+    "messages" : [
+      {
+        "type" : "text",
+        "text" :  msj_asistencia,
+        "mediaURL" : ""
+      }
+    ]
+  },
   "asesor": {
     "action" : {
       "type" : "transfer",
-      "queue" : colas["asesor"].acd
+      "queue" : colas["asesor"].acd,
+      "timeoutInactivity" : colas["asesor"].timeout
+
     },
     "messages" : [
       {
@@ -113,6 +163,32 @@ var palabras = {
     ]
   }
 };
+
+var menu_opciones_asistencia = 
+{
+  "1" : {
+    "action" : {
+      "type" : "transfer",
+     "queue" : colas["asistencia_1"].acd,
+      "timeoutInactivity" : colas["asistencia_1"].timeout
+    },
+    "messages" : []
+  },
+  "2" : {
+    "action" : {
+      "type" : "transfer",
+      "queue" : colas["asistencia_2"].acd,
+      "timeoutInactivity" : colas["asistencia_2"].timeout
+    },
+    "messages" : [
+      {
+        "type" : "text",
+        "text" :  msj_asesor,
+        "mediaURL" : ""
+      }
+    ]
+  }
+}
 
 var contenedor = {
   "action" : {
@@ -149,3 +225,7 @@ exports.palabras = palabras;
 exports.contenedor = contenedor;
 
 exports.colas = colas;
+
+exports.menu_opciones_asistencia = menu_opciones_asistencia;
+
+exports.mjs_horario = mjs_horario;
