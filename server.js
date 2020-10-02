@@ -229,11 +229,28 @@ app.post('/wa/message', async (req, res) => {
 							}							
 							else if(context.lastInteractionFinishType == "CLIENT_TIMEOUT")
 							{
+								console.log("Entro a CLIENT_TIMEOUT WA");
+
+								var timeout_acd = "";
+
+								for (var key in msj_wa.colas)
+								{
+									if(msj_wa.colas[key].acd == context.lastInteractionQueue)
+									{
+										console.log(msj_wa.colas[key].acd);
+										console.log(msj_wa.colas[key].timeout);
+										timeout_acd = msj_wa.colas[key].timeout;
+										break;
+									}
+	
+								}
+
 								resultado = {
 									"context": context,
 									"action": {
 										"type" : "transfer",
 										"queue" : context.lastInteractionQueue,
+										"timeoutInactivity" : timeout_acd
 									},
 									"messages": [],
 									"additionalInfo": {
@@ -497,11 +514,28 @@ app.post('/fb/message', async (req, res) => {
 							}
 							else if(context.lastInteractionFinishType == "CLIENT_TIMEOUT")
 							{
+								console.log("Entro a CLIENT_TIMEOUT FB");
+								
+								var timeout_acd = "";
+
+								for (var key in msj_fb.colas)
+								{
+									if(msj_fb.colas[key].acd == context.lastInteractionQueue)
+									{
+										console.log(msj_fb.colas[key].acd);
+										console.log(msj_fb.colas[key].timeout);
+										timeout_acd = msj_fb.colas[key].timeout;
+										break;
+									}
+	
+								}
+
 								resultado = {
 									"context": context,
 									"action": {
 										"type" : "transfer",
 										"queue" : context.lastInteractionQueue,
+										"timeoutInactivity" : timeout_acd
 									},
 									"messages": [],
 									"additionalInfo": {
@@ -764,11 +798,28 @@ app.post('/tw/message', async (req, res) => {
 							}
 							else if(context.lastInteractionFinishType == "CLIENT_TIMEOUT")
 							{
+								console.log("Entro a CLIENT_TIMEOUT TW");
+								
+								var timeout_acd = "";
+
+								for (var key in msj_tw.colas)
+								{
+									if(msj_tw.colas[key].acd == context.lastInteractionQueue)
+									{
+										console.log(msj_tw.colas[key].acd);
+										console.log(msj_tw.colas[key].timeout);
+										timeout_acd = msj_tw.colas[key].timeout;
+										break;
+									}
+	
+								}
+
 								resultado = {
 									"context": context,
 									"action": {
 										"type" : "transfer",
 										"queue" : context.lastInteractionQueue,
+										"timeoutInactivity" : timeout_acd
 									},
 									"messages": [],
 									"additionalInfo": {
