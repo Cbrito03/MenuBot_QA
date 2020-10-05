@@ -84,7 +84,11 @@ app.post('/wa/message', async (req, res) => {
                 cadena = cadena.replace(/,/g,"").replace(/;/g,"").replace(/:/g,"").replace(/\./g,""); // borramos ,;.:
                 cadena = cadena.split(" "); // lo convertimo en array mediante los espacios
                 
-                console.log("Entro a "+ channel.toLowerCase() +" - whatsapp");               
+                console.log("Entro a "+ channel.toLowerCase() +" - whatsapp");
+
+                if(channel.toLowerCase() === "whatsapp")
+                {
+
                 
                 for(var i = 0; i < cadena.length; i++)
                 {
@@ -254,6 +258,7 @@ app.post('/wa/message', async (req, res) => {
                     "RUT":"1-9"
                   }
                 }
+              }
                              
               }
               else if(context.lastInteractionFinishType == "CLIENT_TIMEOUT")
