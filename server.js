@@ -981,6 +981,149 @@ app.post('/tw/message', async (req, res) => {
   res.status(estatus).json(resultado);
 });
 
+app.post('/CTI/SetAccountCall', async (req, res) => {
+  console.log("[Brito] :: [Peticion POST /message]");
+
+  var resultado= "OK";
+  var estatus = 200;
+
+  var username = req.headers.username;
+  var password = req.headers.password;
+
+  console.log("[Brito] :: [username]", username);
+  console.log("[Brito] :: [password]", password);
+
+  var NumeroTelefonico = req.body.NumeroTelefonico;
+  var IdActividadCampania = req.body.IdActividadCampania;
+  var IdAgente = req.body.IdAgente;
+  var IdLlamada = req.body.IdLlamada;
+
+  if(username == "pcgenesisapi" && password == "glCp0rxwv!Yy4zKGf#wIimHfVF")
+  {
+    if(NumeroTelefonico !== '' && typeof NumeroTelefonico !== "undefined") 
+    {
+      if(IdActividadCampania !== '' && typeof IdActividadCampania !== "undefined") 
+      {
+        if(IdAgente !== '' && typeof IdAgente !== "undefined") 
+        {          
+          if(IdLlamada !== '' && typeof IdLlamada !== "undefined") 
+          {
+            resultado = {
+              "Status": "00",
+              "Mensaje": "Informacion correcta",
+              "RedirectUrl" : "https://www.google.com.mx/"
+            }
+          }
+          else
+          {
+            estatus = 400;
+            resultado = {
+              "estado": "El IdLlamada es requerido"
+            }
+          }                  
+        }
+        else
+        {
+          estatus = 400;
+          resultado = {
+            "estado": "El IdAgente es requerido"
+          }
+        } 
+      }
+      else
+      {
+        estatus = 400;
+        resultado = {
+          "estado": "El IdActividadCampania es requerido"
+        }
+      }
+    }
+    else
+    {
+      estatus = 400;
+      resultado = {
+        "estado": "El NumeroTelefonico es requerido"
+      }
+    }
+  }
+  else
+  {
+    estatus = 400;
+    resultado = {
+      "estado": "98",
+      "mensaje": "Usuario y/o Contraseña Inválido"
+    }
+  }
+
+  res.status(estatus).json(resultado);
+});
+
+app.post('/CTI/SearchAccountByPhoneNumber', async (req, res) => {
+  console.log("[Brito] :: [Peticion POST /message]");
+
+  var resultado= "OK";
+  var estatus = 200;
+
+  var username = req.headers.username;
+  var password = req.headers.password;
+
+  console.log("[Brito] :: [username]", username);
+  console.log("[Brito] :: [password]", password);
+
+  var NumeroTelefonico = req.body.NumeroTelefonico;
+  var IdAgente = req.body.IdAgente;
+  var IdLlamada = req.body.IdLlamada;
+
+  if(username == "pcgenesisapi" && password == "glCp0rxwv!Yy4zKGf#wIimHfVF")
+  {
+    if(NumeroTelefonico !== '' && typeof NumeroTelefonico !== "undefined") 
+    {      
+      if(IdAgente !== '' && typeof IdAgente !== "undefined") 
+      {          
+        if(IdLlamada !== '' && typeof IdLlamada !== "undefined") 
+        {
+          resultado = {
+            "Status": "00",
+            "Mensaje": "Informacion correcta",
+            "RedirectUrl" : "https://www.google.com.mx/"
+          }
+        }
+        else
+        {
+          estatus = 400;
+          resultado = {
+            "estado": "El IdLlamada es requerido"
+          }
+        }                  
+      }
+      else
+      {
+        estatus = 400;
+        resultado = {
+          "estado": "El IdAgente es requerido"
+        }
+      }
+    }
+    else
+    {
+      estatus = 400;
+      resultado = {
+        "estado": "El NumeroTelefonico es requerido"
+      }
+    }
+  }
+  else
+  {
+    estatus = 400;
+    resultado = {
+      "estado": "98",
+      "mensaje": "Usuario y/o Contraseña Inválido"
+    }
+  }
+
+  res.status(estatus).json(resultado);
+});
+
 app.post('/terminate', (req, res) => {
   var result, resultado;
   var bandera = false , estatus = 200;
