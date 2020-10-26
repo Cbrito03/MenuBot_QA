@@ -29,11 +29,13 @@ function validar_dia(day)
 validarHorario_WA = function()
 {
 	var now = moment();
-	fecha_actual = now.tz("America/Tegucigalpa").format("YYYY-MM-DD hh:mm:ss");
+	fecha_actual = now.tz("America/Guatemala").format("YYYY-MM-DD hh:mm:ss");
 
-	var hora = now.tz("America/Tegucigalpa").format("H");
-	var minuto = now.tz("America/Tegucigalpa").format("m");
-	var dia = now.tz("America/Tegucigalpa").format("d");
+	//console.log("[Brito] :: [validarHorario] :: [NOW] :: ", now);
+
+	var hora = now.tz("America/Guatemala").format("H");
+	var minuto = now.tz("America/Guatemala").format("m");
+	var dia = now.tz("America/Guatemala").format("d");
 
 	//console.log("[Brito] :: [validarHorario] :: [NOW] :: "+ now +" :: [Hora] :: "+ hora +" :: [Minuto] :: "+ minuto +" :: [Dia] :: "+ dia);
 
@@ -82,12 +84,12 @@ validarHorario_WA = function()
 validarHorario_FB = function()
 {
 	var now = moment();
-	fecha_actual = now.tz("America/Tegucigalpa").format("YYYY-MM-DD hh:mm:ss");
+	fecha_actual = now.tz("America/Guatemala").format("YYYY-MM-DD hh:mm:ss");
 
 	//console.log("[Brito] :: [validarHorario] :: [NOW] :: ", now);
-	var hora = now.tz("America/Tegucigalpa").format("H");
-	var minuto = now.tz("America/Tegucigalpa").format("m");
-	var dia = now.tz("America/Tegucigalpa").format("d");
+	var hora = now.tz("America/Guatemala").format("H");
+	var minuto = now.tz("America/Guatemala").format("m");
+	var dia = now.tz("America/Guatemala").format("d");
 
 	//console.log("[Brito] :: [validarHorario] :: [NOW] :: "+ now +" :: [Hora] :: "+ hora +" :: [Minuto] :: "+ minuto +" :: [Dia] :: "+ dia);
 
@@ -136,11 +138,12 @@ validarHorario_FB = function()
 validarHorario_TW = function()
 {
 	var now = moment();
-	fecha_actual = now.tz("America/Tegucigalpa").format("YYYY-MM-DD hh:mm:ss");
-	
-	var hora = now.tz("America/Tegucigalpa").format("H");
-	var minuto = now.tz("America/Tegucigalpa").format("m");
-	var dia = now.tz("America/Tegucigalpa").format("d");
+	fecha_actual = now.tz("America/Guatemala").format("YYYY-MM-DD hh:mm:ss");
+
+	//console.log("[Brito] :: [validarHorario] :: [NOW] :: ", now);
+	var hora = now.tz("America/Guatemala").format("H");
+	var minuto = now.tz("America/Guatemala").format("m");
+	var dia = now.tz("America/Guatemala").format("d");
 
 	//console.log("[Brito] :: [validarHorario] :: [NOW] :: "+ now +" :: [Hora] :: "+ hora +" :: [Minuto] :: "+ minuto +" :: [Dia] :: "+ dia);
 
