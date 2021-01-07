@@ -441,4 +441,42 @@ router.post('/wa/message', async (req, res) => {
   res.status(estatus).json(resultado);
 });
 
+router.post('/prueba', async (req, res) => {
+
+  var resultado;
+  var estatus = 200;
+
+  var dato = req.body.dato;   
+
+  var now = moment();
+  var fecha_actual = now.tz("America/Mexico_City").format("YYYY-MM-DD HH:mm:ss");
+  //fecha_actual = moment(fecha_actual, "YYYY-MM-DD HH:mm:ss"); 
+
+  if(dato !== '' && typeof dato !== "undefined") 
+  {
+    resultado = {
+      "status": estatus,
+      "result": {
+        "fecha" : fecha_actual,
+        "mensaje" : dato
+      }
+    }
+    
+    console.log(resultado);
+  }
+  else
+  {
+    estatus = 400;
+    resultado = {
+      "status": estatus,
+       "result": {
+        "fecha" : fecha_actual,
+        "mensaje" : "El valor de DATO es requerido"
+      }
+    }
+  }
+
+  res.status(estatus).json(resultado);
+});
+
 module.exports = router
