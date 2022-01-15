@@ -24,7 +24,7 @@
     "moment-timezone": "^0.5.31",
     "node-localstorage": "^2.1.5",
     "request": "^2.88.2",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.5"
   },
   "engines": {
     "node": "^10.19.0",
